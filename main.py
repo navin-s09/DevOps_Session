@@ -38,7 +38,7 @@ def root(name: Optional[str] = None):
     """Root endpoint"""
     if (name != None):
         return {"msg": f"Hello {name}, welcome"}
-    return {"message": "Welcome to FastAPI!"}
+    return {"message": "Welcome to FastAPI I am Navin "}
 
 
 @app.get("/items/{item_id}")
