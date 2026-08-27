@@ -10,8 +10,8 @@ from crud import get_item_from_db, get_all_items_from_db, create_item_in_db, upd
 DBDependency = Annotated[Session, Depends(get_db)]
 
 app = FastAPI(
-    title="My FastAPI Project",
-    description="A basic FastAPI application",
+    title="My FastAPI Project (DevOps Session)",
+    description="A basic FastAPI application from the DevOps Session",
     version="1.0.0"
 )
 
