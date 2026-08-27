@@ -24,4 +24,8 @@ jobs:
       
       - name: Set up Python
         uses: actions/setup-phython@v5
+        with:
+          python-version: '3.10'
+      
+
     
