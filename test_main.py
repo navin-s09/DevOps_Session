@@ -52,7 +52,7 @@ def test_root_endpoint():
     """Test the root endpoint"""
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Welcome to FastAPI!"}
+    assert response.json() == {"message": "Welcome to FastAPI I am Navin"}
 
 def test_root_endpoint_with_name():
     """Test the root endpoint with name parameter"""
