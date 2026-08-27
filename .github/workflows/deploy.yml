@@ -13,3 +13,15 @@ jobs:
     steps:
       - name: Trigger Render deployment
         run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
+
+  test:
+    name: Run Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-phython@v5
+    
